@@ -121,6 +121,7 @@ plt.xlabel('Size (m²)')
 plt.ylabel('Price (10k TWD)')
 plt.title('預測與實際價格比較')
 plt.show()
+```
 
 ## 6. 部署（Deployment）
 plt.legend()
@@ -135,7 +136,6 @@ predicted_price = model.predict(new_size)
 
 for s, p in zip(new_size['Size'], predicted_price):
     print(f"預測 {s:.1f} 平方公尺房屋的價格為: {p:.2f} 萬元")
-```
 
 python
 new_size = pd.DataFrame({'Size': [85, 150, 60]})
